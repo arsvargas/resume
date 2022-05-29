@@ -50,7 +50,10 @@ body{
     position: relative;
     width: 200px;
     height: 200px;
-    border-radius: 50%;
+    border-bottom-left-radius: 30%;
+    border-top-right-radius: 30%;
+    border: #4E8397 double 1px;
+    padding: 3px;
     overflow: hidden;
 }
 
@@ -134,6 +137,13 @@ body{
     font-weight: 300;
     padding-bottom: 15px;
     cursor: default;
+    padding: 5px;
+    
+}
+.contactInfo.education li i{
+    color: #D8EFF8;
+    font-size: 25px;
+    margin-right: 5px;
 }
 
 .contactInfo.language .percent{
@@ -181,14 +191,26 @@ p{
 
 .about .box{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 20px 0;
+}
+
+.about .box .text{
+    margin-bottom: 20px;
+    border-bottom: #4E8397 solid 0.5px;
+    padding-bottom: 10px;
+}
+
+.about .box .text a{
+    text-decoration: none;
+    color: inherit;
 }
 
 .about .box .text h4{
     text-transform: uppercase;
     color: #2a7da2;
     font-size: 16px;
+    padding-bottom: 5px;
 }
 
 .interest ul{
